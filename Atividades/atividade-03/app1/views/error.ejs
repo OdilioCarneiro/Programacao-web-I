@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Error</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+	<body>
+		<h1><%= message %></h1>
+		<h2><%= error.status %></h2>
+		<% if (error && error.stack) { %>
+			<pre><%= error.stack %></pre>
+		<% } %>
+		<p><a href="/">Voltar ao índice</a></p>
+	</body>
+</html>

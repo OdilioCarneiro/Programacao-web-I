@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/header') %>
+  <body>
+    <h1>Signup</h1>
+    <p>Por favor, faça o cadastro para obter um userid.</p>
+    <form action="/users/signup" method="post">
+      <label for="userid">User ID</label>
+      <input id="userid" name="userid" />
+      <button type="submit">Signup</button>
+    </form>
+    <%- include('./partials/footer') %>
+  </body>
+</html>
